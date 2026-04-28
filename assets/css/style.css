@@ -4,34 +4,34 @@
  */
 
 :root {
-    /* AutomationFeed Inspired Palette */
-    --primary-color: #0f172a;
-    /* Dark Royal Blue (Hero/Footer) */
-    --secondary-color: #1e293b;
-    /* Slate 800 (Darker Text for readability) */
-    --accent-color: #EF4444;
-    /* Vibrant Red (Accents/Buttons) */
-    --accent-secondary: #dc2626;
-    /* Darker Red (Hover) */
+    /* Sarvam AI Inspired Palette */
+    --primary-color: #000000;
+    /* Pure Black */
+    --secondary-color: #111111;
+    /* Almost Black */
+    --accent-color: #000000;
+    /* Black for accents too, very monochrome */
+    --accent-secondary: #333333;
+    /* Dark Grey */
 
-    --bg-dark: #F7F9FC;
-    /* Ice Blue/Off-White (Body Background) */
-    --bg-secondary: #ffffff;
-    /* Pure White (Cards) */
+    --bg-dark: #ffffff;
+    /* Pure White */
+    --bg-secondary: #f9f9f9;
+    /* Very light grey for cards */
 
-    --text-light: #f8fafc;
-    /* White Text (for dark backgrounds) */
-    --text-muted: #475569;
-    /* Slate 600 (Darker for better contrast) */
+    --text-light: #ffffff;
+    /* White Text */
+    --text-muted: #666666;
+    /* Grey for muted text */
 
-    --glass-bg: rgba(255, 255, 255, 0.95);
-    --glass-border: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 1);
+    --glass-border: #e5e5e5;
 
     --nav-height: 80px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all 0.2s ease-in-out;
 
-    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --card-radius: 12px;
+    --card-shadow: none; /* Flat design */
+    --card-radius: 0px; /* Sharp corners */
 }
 
 * {
@@ -49,15 +49,15 @@ html {
 
 body {
     background-color: var(--bg-dark);
-    /* Light Background */
-    background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
-    background-size: 32px 32px;
-    /* Subtle dot pattern */
+    /* Solid background */
+    background-image: none;
+    /* No dot pattern */
     color: var(--secondary-color);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     /* Body Font */
-    line-height: 1.7;
+    line-height: 1.6;
     overflow-x: hidden;
+    letter-spacing: -0.01em;
 }
 
 h1,
@@ -66,10 +66,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     /* Heading Font */
     color: var(--primary-color);
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: -0.03em;
 }
 
 h1 {
@@ -125,7 +126,7 @@ h1 {
     text-transform: none;
     /* Sentence case is friendlier */
     letter-spacing: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .stat-card.wide-card p {
@@ -323,7 +324,7 @@ h1 {
 .expertise-card h3 {
     margin-bottom: 1rem;
     font-size: 1.3rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .expertise-card p {
@@ -465,7 +466,7 @@ a {
     font-weight: 700;
     color: var(--primary-color);
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: -0.5px;
 }
 
@@ -487,7 +488,7 @@ a {
     font-size: 1rem;
     position: relative;
     transition: var(--transition);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .nav-links a:hover,
@@ -623,7 +624,7 @@ a {
     font-size: 1rem;
     position: relative;
     transition: var(--transition);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .cta-group {
